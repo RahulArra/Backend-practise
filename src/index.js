@@ -13,7 +13,12 @@ dotenv.config({
 
 
 connectDb()
-
+.then(()=>{
+    app.listen(process.env.PORT || 8000,()=>{
+        console.log("server started",process.env.PORT)
+    })
+})
+.catch((err)=> console.log("connection failed ",err))
 
 
 
