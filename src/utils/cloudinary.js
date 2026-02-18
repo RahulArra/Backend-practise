@@ -3,15 +3,11 @@ import { response } from "express"
 import fs from "fs"
 
 
-
 cloudinary.config({
     cloud_name : process.env.CLOUDINARY_CLOUD_NAME ,
     api_key: process.env.CLOUDAINARY_API_KEY,
     api_secret:process.env.CLOUDINARY_API_SECRET
 });
-
-
-
 
 const uploadonCLoudinary = async (localFilePath) =>{
     try{
@@ -28,3 +24,5 @@ const uploadonCLoudinary = async (localFilePath) =>{
         return null;
     }
 }
+
+export {uploadonCLoudinary}
