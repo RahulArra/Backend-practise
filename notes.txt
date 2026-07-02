@@ -1,0 +1,29 @@
+proxy :- used to solve cors issue
+dist :- npm run build
+
+always the model name will be stored in lower case + plural form , ex : model is "User" then it is stored as "users" in db.
+
+nodemon :- auto restart backend
+
+prettier :- used to overcome coma and other things which are done diff by diff person
+.prettierignore
+.prettierrc : -  used to setup the things to be common on all and make   the code look the same for all
+
+
+always wrap the db connection in try catch .
+
+always db is in another country , "so keep async await for connection "
+
+next is just a flag , used to tell we are done with work
+
+should do utils which will be usefulll for future things 
+
+
+mongoose-aggregate-paginate-v2  is used to aggregate pipelines of mongodb , in advance level
+
+middle ware has hooks  : pre,post/..... using events
+
+we cna make custom schema
+
+jwt is bearer token , it is ike a key who ever has this key can access data
+
